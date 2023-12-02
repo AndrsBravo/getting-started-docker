@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app-node:
+    build: .
+    #  context: .
+    #  args:
+    #    - NODE_ENV=prod
+    environment:
+      - NODE_ENV=prod
+    command: npm run start

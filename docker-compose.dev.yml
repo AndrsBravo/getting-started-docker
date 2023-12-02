@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app-node:
+    build: .
+    #  context: .
+    #  args:
+    #    - NODE_ENV=dev
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=dev
+    command: npm run dev
